@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Corporation - Воплощаем в реальность самые красивые сны</title>
+    <meta name="description" content="Hair Corporation - ведущая сеть салонов красоты в Алматы. Топ-стилисты, авторские техники окрашивания, онлайн-запись 24/7. Два филиала: Шевченко 37 и ЖК Хан-Тенгри.">
+    <meta name="keywords" content="салон красоты алматы, стрижка алматы, окрашивание волос, балаяж, мелирование, hair corporation, парикмахерская алматы, бьюти-бар">
+    <meta name="author" content="Hair Corporation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://haircorporation.kz">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hair Corporation - Воплощаем в реальность самые красивые сны">
+    <meta property="og:description" content="Топ-стилисты, авторские техники окрашивания, консультация до каждой процедуры, онлайн-запись 24/7">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://haircorporation.kz">
+    <meta property="og:image" content="https://haircorporation.kz/assets/images/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Hair Corporation">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hair Corporation - Воплощаем в реальность самые красивые сны">
+    <meta property="twitter:description" content="Топ-стилисты, авторские техники окрашивания, консультация до каждой процедуры, онлайн-запись 24/7">
+    <meta property="twitter:image" content="https://haircorporation.kz/assets/images/og-cover.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/images/hero-bg.jpg" as="image">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BeautySalon",
+      "name": "Hair Corporation",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Шевченко 37",
+        "addressLocality": "Алматы",
+        "addressCountry": "KZ"
+      },
+      "telephone": "+77051715089",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "image": "https://haircorporation.kz/assets/images/og-cover.jpg",
+      "url": "https://haircorporation.kz",
+      "priceRange": "$$",
+      "hasMap": "https://maps.app.goo.gl/your-map-link"
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#hero" class="logo">Hair Corporation</a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-links desktop-nav">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                
+                <!-- Desktop Book Button -->
+                <button class="book-button desktop-book" onclick="document.getElementById('booking-modal').style.display='block'">Записаться</button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav" id="mobile-nav">
+                    <div class="mobile-nav-content">
+                        <ul class="mobile-nav-links">
+                            <li><a href="#about" onclick="closeMobileMenu()">О нас</a></li>
+                            <li><a href="#services" onclick="closeMobileMenu()">Услуги</a></li>
+                            <li><a href="gallery.html" onclick="closeMobileMenu()">Галерея</a></li>
+                            <li><a href="#team" onclick="closeMobileMenu()">Команда</a></li>
+                            <li><a href="#reviews" onclick="closeMobileMenu()">Отзывы</a></li>
+                            <li><a href="#contacts" onclick="closeMobileMenu()">Контакты</a></li>
+                        </ul>
+                        <button class="mobile-book-button" onclick="document.getElementById('booking-modal').style.display='block'; closeMobileMenu();">Записаться</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+         <div class="hero-image">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="assets/videos/2025-06-2516.58.51.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="container hero-content">
+                <p class="hero-tagline">Все начинается с головы</p>
+                <h1 class="hero-title">ВОПЛОЩАЕМ <span class="highlight">В РЕАЛЬНОСТЬ</span> <br> <span class="italic">самые</span> КРАСИВЫЕ СНЫ</h1>
+                <p class="hero-subtitle">салоны красоты <a href="#contacts" class="link-inline">Шевченко 37</a> и <a href="#contacts" class="link-inline">ЖК Хан-Тенгри</a></p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById(\'booking-modal\').style.display=\'block\'">Записаться онлайн</button>
+                    <a href="https://wa.me/77051715089" target="_blank" class="btn btn-secondary">Написать в Whatsapp</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="about-section">
+            <div class="container">
+                <h2 class="section-title">СОН — это бьюти-бар, <span class="italic">вдохновленный</span> темой ретро-кинотеатров</h2>
+                <div class="about-video-container">
+                    <video autoplay muted loop playsinline class="about-video">
+                        <source src="assets/videos/2025-06-2516.58.54.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="about-company-section">
+            <div class="container">
+                <h2 class="section-title">Всё начинается с головы!</h2>
+                <div class="about-content">
+                    <p class="about-description">
+                        Hair Corporation - это не просто Студия красоты, это Креативное пространство и команда профессионалов, которая раскрывает индивидуальность гостей.
+                    </p>
+                    
+                    <div class="advantages">
+                        <h3>Наши преимущества:</h3>
+                        <div class="advantages-list">
+                            <div class="advantage-item">
+                                <span class="advantage-icon">✅</span>
+                                <span>Более 10 лет на рынке beauty-индустрии Казахстана</span>
+                            </div>
+                            <div class="advantage-item">
+                                <span class="advantage-icon">✅</span>
+                                <span>1000 клиентов ежемесячно доверяют нам свою красоту</span>
+                            </div>
+                            <div class="advantage-item">
+                                <span class="advantage-icon">✅</span>
+                                <span>Команда имеет сертификацию международного уровня</span>
+                            </div>
+                            <div class="advantage-item">
+                                <span class="advantage-icon">✅</span>
+                                <span>Ежегодное участие в масштабных мероприятиях, таких как Fashion Week в Милане</span>
+                            </div>
+                            <div class="advantage-item">
+                                <span class="advantage-icon">✅</span>
+                                <span>4 место в Чемпионате мира Wold Champion Hairstilist 2024, который состоялся в г.Тестина (Италия)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="invitation">
+                        Приглашаем Вас окунуться в нашу атмосферу красоты и гармонии. 🧖‍♀️👸
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="service-categories">
+                    <button class="category-btn active" data-category="all">Все услуги</button>
+                    <button class="category-btn" data-category="haircut">Стрижки</button>
+                    <button class="category-btn" data-category="styling">Укладки</button>
+                    <button class="category-btn" data-category="coloring">Окрашивание</button>
+                    <button class="category-btn" data-category="care">Уход для волос</button>
+                    <button class="category-btn" data-category="makeup">Макияж и брови</button>
+                    <button class="category-btn" data-category="massage">Массаж</button>
+                    <button class="category-btn" data-category="nails">Маникюр и педикюр</button>
+                </div>
+                <div class="service-list">
+                    <!-- Services will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates-section">
+            <div class="container">
+                <h2 class="section-title">Сертификаты <span class="italic">и абонементы</span></h2>
+                <p class="subtitle">С абонементами любимые процедуры дешевле на 12%</p>
+                <button class="btn btn-primary">Купить</button>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2 class="section-title">Наша команда</h2>
+                <div class="team-grid">
+                    <div class="team-category">
+                        <h3>Руководящий состав</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Полина1.JPG,Полина2.JPG,Полина3.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Полина1.JPG" alt="Полина">
+                                        <img src="assets/images/team/Полина2.JPG" alt="Полина">
+                                        <img src="assets/images/team/Полина3.JPG" alt="Полина">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Полина</h4>
+                                <p>Руководитель-технолог</p>
+                                <p class="description">(отвечает за технические стандарты, обучение персонала и внедрение новых технологий)</p>
+                            </div>
+                            <div class="team-member" data-images="Лада1.JPG,Лада2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Лада1.JPG" alt="Лада">
+                                        <img src="assets/images/team/Лада2.JPG" alt="Лада">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Лада</h4>
+                                <p>Арт-директор</p>
+                                <p class="description">(главный креативный специалист, формирует тренды и стандарты стиля, персонализирует подход к клиентам, обучает и контролирует команду)</p>
+                            </div>
+                            <div class="team-member" data-images="Нурсауле1.JPG,Нурсауле2.JPG,Нурсауле3.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Нурсауле1.JPG" alt="Нурсауле">
+                                        <img src="assets/images/team/Нурсауле2.JPG" alt="Нурсауле">
+                                        <img src="assets/images/team/Нурсауле3.JPG" alt="Нурсауле">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Нурсауле</h4>
+                                <p>Ведущий топ-стилист</p>
+                                <p class="description">(мастер самого высокого уровня с огромным опытом, к ней часто записываются VIP-клиенты)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-category">
+                        <h3>Ведущие мастера</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Алина1.JPG,Алина2.JPG,Алина3.JPG,Алина4.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Алина1.JPG" alt="Алина">
+                                        <img src="assets/images/team/Алина2.JPG" alt="Алина">
+                                        <img src="assets/images/team/Алина3.JPG" alt="Алина">
+                                        <img src="assets/images/team/Алина4.JPG" alt="Алина">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Алина</h4>
+                                <p>Топ-стилист</p>
+                                <p class="description">(отвечает за сложные и эксклюзивные работы, может вести обучение)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-category">
+                        <h3>Старшие стилисты</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Рада1.JPG,Рада2.JPG,Рада3.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Рада1.JPG" alt="Рада">
+                                        <img src="assets/images/team/Рада2.JPG" alt="Рада">
+                                        <img src="assets/images/team/Рада3.JPG" alt="Рада">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Рада</h4>
+                            </div>
+                            <div class="team-member" data-images="Мария1.JPG,Мария2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Мария1.JPG" alt="Мария">
+                                        <img src="assets/images/team/Мария2.JPG" alt="Мария">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Мария</h4>
+                            </div>
+                        </div>
+                        <p class="category-description">(опытные мастера, выполняют широкий спектр процедур, часто работают с постоянными клиентами)</p>
+                    </div>
+
+                    <div class="team-category">
+                        <h3>Стилисты, 1 категория</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Эрика.JPG,Эрика2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Эрика.JPG" alt="Эрика">
+                                        <img src="assets/images/team/Эрика2.JPG" alt="Эрика">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Эрика</h4>
+                            </div>
+                        </div>
+                        <p class="category-description">(выполняет большинство классических и современных техник окрашивания, стрижки, укладки)</p>
+                    </div>
+
+                    <div class="team-category">
+                        <h3>Стилисты, 2 категория</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Назгума1.JPG,Назгума2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Назгума1.JPG" alt="Назгума">
+                                        <img src="assets/images/team/Назгума2.JPG" alt="Назгума">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Назгума</h4>
+                            </div>
+                            <div class="team-member" data-images="Максат.JPG,Максат2.JPG,Максат3.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Максат.JPG" alt="Максат">
+                                        <img src="assets/images/team/Максат2.JPG" alt="Максат">
+                                        <img src="assets/images/team/Максат3.JPG" alt="Максат">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Максат</h4>
+                            </div>
+                        </div>
+                        <p class="category-description">(выполняет стандартные процедуры, активно развивается и повышает квалификацию)</p>
+                    </div>
+
+                     <div class="team-category">
+                        <h3>Junior стилисты</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Лера1.JPG,Лера1—копия.JPG,Лера2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Лера1.JPG" alt="Лера">
+                                        <img src="assets/images/team/Лера1—копия.JPG" alt="Лера">
+                                        <img src="assets/images/team/Лера2.JPG" alt="Лера">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Лера</h4>
+                            </div>
+                            <div class="team-member" data-images="Злата1.JPG,Злата2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Злата1.JPG" alt="Злата">
+                                        <img src="assets/images/team/Злата2.JPG" alt="Злата">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Злата</h4>
+                            </div>
+                            <div class="team-member" data-images="Алена1.JPG,Алена2.JPG,Алена3.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Алена1.JPG" alt="Алёна">
+                                        <img src="assets/images/team/Алена2.JPG" alt="Алёна">
+                                        <img src="assets/images/team/Алена3.JPG" alt="Алёна">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Алёна</h4>
+                            </div>
+                            <div class="team-member" data-images="Назерке1.JPG,Назерке2.JPG,Назерке3.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Назерке1.JPG" alt="Назерке">
+                                        <img src="assets/images/team/Назерке2.JPG" alt="Назерке">
+                                        <img src="assets/images/team/Назерке3.JPG" alt="Назерке">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Назерке</h4>
+                            </div>
+                        </div>
+                        <p class="category-description">(начинающие мастера, выполняют базовые процедуры под наблюдением старших коллег)</p>
+                    </div>
+
+                    <div class="team-category">
+                        <h3>Бровисты, 1 категория</h3>
+                        <div class="team-members-list">
+                            <div class="team-member" data-images="Софья1.JPG,Софья2.JPG">
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <img src="assets/images/team/Софья1.JPG" alt="Софья">
+                                        <img src="assets/images/team/Софья2.JPG" alt="Софья">
+                                    </div>
+                                    <button class="carousel-button prev">&lt;</button>
+                                    <button class="carousel-button next">&gt;</button>
+                                </div>
+                                <h4>Софья</h4>
+                            </div>
+                        </div>
+                        <p class="category-description">(специалисты по оформлению бровей, владеют современными техниками коррекции и окрашивания)</p>
+                    </div>
+                </div>
+            </section>
+
+        <section id="mission" class="mission-section">
+            <div class="container">
+                <h2 class="section-title">Наша миссия</h2>
+                <div class="mission-content">
+                    <p class="mission-text">
+                        В Hair Corporation мы верим, что каждый человек уникален и заслуживает индивидуального подхода к своей красоте. 
+                        Наша миссия — не просто создавать прически, а воплощать в реальность самые красивые сны наших клиентов.
+                    </p>
+                    <p class="mission-text">
+                        Мы стремимся быть не просто салоном красоты, а местом, где профессионализм сочетается с творчеством, 
+                        где каждый клиент получает не только качественную услугу, но и незабываемые эмоции от процесса преображения.
+                    </p>
+                </div>
+                
+                <div class="team-photos-carousel">
+                    <h3>Наша дружная команда</h3>
+                    <div class="team-carousel-container">
+                        <div class="team-carousel-inner">
+                            <img src="assets/images/BU4A4083.JPG" alt="Команда Hair Corporation" class="active">
+                            <img src="assets/images/BU4A4193.JPG" alt="Команда Hair Corporation">
+                            <img src="assets/images/BU4A4293.JPG" alt="Команда Hair Corporation">
+                            <img src="assets/images/BU4A4389.JPG" alt="Команда Hair Corporation">
+                            <img src="assets/images/BU4A4425.JPG" alt="Команда Hair Corporation">
+                        </div>
+                        <button class="team-carousel-button prev">&lt;</button>
+                        <button class="team-carousel-button next">&gt;</button>
+                        <div class="team-carousel-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                            <span class="dot" data-slide="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-item">
+                        <div class="rating">★★★★★</div>
+                        <p class="review-text">"Потрясающий результат! Лада превратила мои волосы в произведение искусства. Окрашивание держится уже 3 месяца и выглядит как новое."</p>
+                        <p class="reviewer"><strong>Анна К.</strong> Клиент филиала HC</p>
+                    </div>
+                    <div class="review-item">
+                        <div class="rating">★★★★★</div>
+                        <p class="review-text">"Нурсауле - волшебница! Сделала мне Total Blond без повреждения волос. Профессионализм на высшем уровне."</p>
+                        <p class="reviewer"><strong>Мария С.</b> Клиент филиала ХТ</p>
+                    </div>
+                    <div class="review-item">
+                        <div class="rating">★★★★★</div>
+                        <p class="review-text">"Хожу в Hair Corporation уже 2 года. Всегда идеальный результат, приятная атмосфера и внимательное отношение."</p>
+                        <p class="reviewer"><strong>Елена Т.</strong> Постоянный клиент</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts-section">
+            <div class="container">
+                <h2 class="section-title">Будем на связи</h2>
+                <p class="working-hours">работаем с 10:00 до 22:00</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/77051715089" target="_blank" class="btn btn-primary">Написать в Whatsapp</a>
+                    <a href="tel:+77051715089" class="btn btn-secondary">Позвонить</a>
+                </div>
+                <div class="branches">
+                    <div class="branch-info">
+                        <h3>Филиал «Хан Тенгри»</h3>
+                        <p class="address">050070, г. Алматы, мкр. Каргалы, ул. Кенесары хана 54/29 (ЖК «Хан-Тенгри»)</p>
+                        <p class="phone">+7 705 171-50-89</p>
+                        <p class="working-hours-branch">ежедневно 10:00 – 20:00</p>
+                        <div class="branch-links">
+                            <a href="https://wa.me/77051715089" target="_blank" class="map-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.386"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                            <a href="https://www.instagram.com/haircorporation.2.0" target="_blank" class="map-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="branch-info">
+                        <h3>Филиал «Шевченко 37»</h3>
+                        <p class="address">050010, г. Алматы, ул. Шевченко 37, 1-й этаж (уг. ул. Кунаева)</p>
+                        <p class="phone">+7 777 179-76-98</p>
+                        <p class="working-hours-branch">ежедневно 08:00 – 20:00</p>
+                        <div class="branch-links">
+                            <a href="https://wa.me/77771797698" target="_blank" class="map-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.386"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                            <a href="https://www.instagram.com/hair_corporation/" target="_blank" class="map-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Hair Corporation</h3>
+                    <p>Воплощаем в реальность самые красивые сны</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="offer.html">Публичная оферта</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hair Corporation. Все права защищены.</p>
+            </div>
+        </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="document.getElementById(\'booking-modal\').style.display=\'none\'">&times;</span>
+            <h2>Онлайн запись</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="service-select">Выберите услугу:</label>
+                    <select id="service-select" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="Женская стрижка">Женская стрижка</option>
+                        <option value="Мужская стрижка">Мужская стрижка</option>
+                        <option value="Окрашивание простое">Окрашивание простое</option>
+                        <option value="Сложное окрашивание">Сложное окрашивание</option>
+                        <option value="Total Blond">Total Blond</option>
+                        <option value="Укладка">Укладка</option>
+                        <option value="Уход и восстановление">Уход и восстановление</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="master-select">Выберите мастера:</label>
+                    <select id="master-select" required>
+                        <option value="">Выберите мастера</option>
+                        <option value="Лада">Лада (Арт-директор)</option>
+                        <option value="Нурсауле">Нурсауле (Топ-специалист)</option>
+                        <option value="Любой">Любой доступный мастер</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="branch-select">Филиал:</label>
+                    <select id="branch-select" required>
+                        <option value="">Выберите филиал</option>
+                        <option value="HC">HC (ул. Шевченко 37)</option>
+                        <option value="XT">ХТ (ЖК Хан-Тенгри)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date-input">Дата:</label>
+                    <input type="date" id="date-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="time-select">Время:</label>
+                    <select id="time-select" required>
+                        <option value="">Выберите время</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name-input">Ваше имя:</label>
+                    <input type="text" id="name-input" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-input">Телефон:</label>
+                    <input type="tel" id="phone-input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/team-carousel.js"></script>
+    
+    <!-- Analytics -->
+    <!-- Meta Pixel -->
+    <script>
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            mobileNav.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (mobileNav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        
+        function closeMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            mobileNav.classList.remove('active');
+            menuBtn.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobile-nav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileNav.classList.contains('active') && 
+                !mobileNav.contains(event.target) && 
+                !menuBtn.contains(event.target)) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close mobile menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Meta Pixel Code Here
+    </script>
+</body>
+</html>
+
