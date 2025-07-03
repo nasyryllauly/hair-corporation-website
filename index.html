@@ -752,6 +752,75 @@
         }
     </style>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    
+    <!-- JavaScript to remove ElevenLabs branding -->
+    <script>
+        // Wait for the branding element to appear and remove it
+        function removeBranding() {
+            // Try multiple possible selectors for branding elements
+            const selectors = [
+                '.elevenlabs-branding',
+                '[class*="branding"]',
+                '[class*="powered"]',
+                'div:contains("Powered by ElevenLabs")',
+                'a[href*="elevenlabs.io"]',
+                '*[data-testid*="branding"]'
+            ];
+            
+            let removed = false;
+            selectors.forEach(selector => {
+                try {
+                    const elements = document.querySelectorAll(selector);
+                    elements.forEach(el => {
+                        if (el && (el.textContent.includes('Powered by') || el.textContent.includes('ElevenLabs') || el.textContent.includes('Conversational AI'))) {
+                            el.remove();
+                            removed = true;
+                            console.log('Removed branding element:', selector);
+                        }
+                    });
+                } catch (e) {
+                    // Some selectors might not work in all browsers
+                }
+            });
+            
+            // Also try to find and remove elements by text content
+            const allElements = document.querySelectorAll('*');
+            allElements.forEach(el => {
+                if (el.textContent && el.textContent.trim() === 'Powered by ElevenLabs Conversational AI') {
+                    el.remove();
+                    removed = true;
+                    console.log('Removed branding by text content');
+                }
+            });
+            
+            return removed;
+        }
+
+        // Try to remove branding immediately
+        setTimeout(() => {
+            if (!removeBranding()) {
+                // If not found immediately, observe for changes
+                const observer = new MutationObserver((mutations, obs) => {
+                    if (removeBranding()) {
+                        console.log('Branding removed via MutationObserver');
+                        // Don't disconnect observer, keep watching for re-additions
+                    }
+                });
+                
+                observer.observe(document.body, { 
+                    childList: true, 
+                    subtree: true,
+                    attributes: true,
+                    attributeOldValue: true
+                });
+                
+                console.log('MutationObserver started for branding removal');
+            }
+        }, 1000);
+        
+        // Also try periodically in case the widget re-adds the branding
+        setInterval(removeBranding, 2000);
+    </script>
 </body>
 </html>
 
