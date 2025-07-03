@@ -716,13 +716,19 @@
     
     <!-- CSS to hide ElevenLabs branding -->
     <style>
-        /* Hide ElevenLabs branding elements */
-        [class*="footer"],
-        [class*="branding"],
-        [class*="powered"],
-        div:has(span:contains("Powered by ElevenLabs")),
-        div:has(a[href*="elevenlabs.io"]),
-        *:contains("Powered by ElevenLabs") {
+        /* Hide ElevenLabs branding elements - ChatGPT solution */
+        .elevenlabs-chat-widget .elevenlabs-branding {
+            display: none !important;
+        }
+        
+        /* Additional comprehensive selectors for ElevenLabs widget branding */
+        [class*="elevenlabs"] [class*="branding"],
+        [class*="elevenlabs"] [class*="powered"],
+        [class*="elevenlabs"] [class*="footer"],
+        div[class*="elevenlabs"] div:contains("Powered by"),
+        div[class*="elevenlabs"] a[href*="elevenlabs.io"],
+        div[class*="elevenlabs"] span:contains("Powered by ElevenLabs"),
+        div[class*="elevenlabs"] div:contains("Conversational AI") {
             display: none !important;
             visibility: hidden !important;
             opacity: 0 !important;
@@ -730,9 +736,15 @@
             overflow: hidden !important;
         }
         
-        /* Additional selectors for ElevenLabs widget branding */
+        /* Target any element containing ElevenLabs branding text */
+        *:contains("Powered by ElevenLabs"),
+        *:contains("Conversational AI") {
+            display: none !important;
+        }
+        
+        /* Hide elements that appear after the widget loads */
+        elevenlabs-convai + div[style*="position"],
         elevenlabs-convai ~ div[style*="position"],
-        elevenlabs-convai + div,
         [data-testid*="branding"],
         [data-testid*="footer"],
         [aria-label*="Powered by"] {
