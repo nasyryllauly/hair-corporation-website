@@ -725,21 +725,12 @@
         [class*="elevenlabs"] [class*="branding"],
         [class*="elevenlabs"] [class*="powered"],
         [class*="elevenlabs"] [class*="footer"],
-        div[class*="elevenlabs"] div:contains("Powered by"),
-        div[class*="elevenlabs"] a[href*="elevenlabs.io"],
-        div[class*="elevenlabs"] span:contains("Powered by ElevenLabs"),
-        div[class*="elevenlabs"] div:contains("Conversational AI") {
+        div[class*="elevenlabs"] a[href*="elevenlabs.io"] {
             display: none !important;
             visibility: hidden !important;
             opacity: 0 !important;
             height: 0 !important;
             overflow: hidden !important;
-        }
-        
-        /* Target any element containing ElevenLabs branding text */
-        *:contains("Powered by ElevenLabs"),
-        *:contains("Conversational AI") {
-            display: none !important;
         }
         
         /* Hide elements that appear after the widget loads */
