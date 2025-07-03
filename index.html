@@ -711,9 +711,34 @@
     <elevenlabs-convai 
         agent-id="agent_01jz5p2s7req3r1ny8g02ayybg"
         action-text="Нужна помощь с выбором услуги?"
-        start-call-text="Поговорить с консультантом прямо сейчас"
-        hide-branding="true">
+        start-call-text="Поговорить с консультантом прямо сейчас">
     </elevenlabs-convai>
+    
+    <!-- CSS to hide ElevenLabs branding -->
+    <style>
+        /* Hide ElevenLabs branding elements */
+        [class*="footer"],
+        [class*="branding"],
+        [class*="powered"],
+        div:has(span:contains("Powered by ElevenLabs")),
+        div:has(a[href*="elevenlabs.io"]),
+        *:contains("Powered by ElevenLabs") {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+        
+        /* Additional selectors for ElevenLabs widget branding */
+        elevenlabs-convai ~ div[style*="position"],
+        elevenlabs-convai + div,
+        [data-testid*="branding"],
+        [data-testid*="footer"],
+        [aria-label*="Powered by"] {
+            display: none !important;
+        }
+    </style>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body>
 </html>
