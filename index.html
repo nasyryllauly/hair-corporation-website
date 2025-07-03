@@ -750,20 +750,6 @@
         [aria-label*="Powered by"] {
             display: none !important;
         }
-        
-        /* Overflow hidden method to crop widget branding */
-        elevenlabs-convai {
-            position: relative;
-            display: block;
-            max-height: 280px !important;
-            overflow: hidden !important;
-        }
-        
-        /* Hide any fixed positioned elements that might contain branding */
-        body > div[style*="position: fixed"] {
-            max-height: 280px !important;
-            overflow: hidden !important;
-        }
     </style>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
     
